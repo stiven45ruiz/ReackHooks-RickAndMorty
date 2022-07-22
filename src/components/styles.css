@@ -1,0 +1,59 @@
+.favorites{
+  display: flex;
+  overflow-x: auto;
+}
+.favorites::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.favorites::-webkit-scrollbar-button:increment, 
+.favorites::-webkit-scrollbar-button{
+  display: none;
+}
+.favorites::-webkit-scrollbar:horizontal{
+  height: 10px;
+}
+.favorites::-webkit-scrollbar-thumb{
+  background-color: #474747;
+  border-radius: 5px;
+  border: none;
+}
+
+
+
+.favorites__card{
+  margin: 20px;
+}
+.favorites__card > img{
+  width: 100px;
+}
+
+.container__characters{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 50px 20px;
+}
+
+.characters__card{
+  position: relative;
+  border: solid 1px white;
+  margin: 30px;
+  padding: 10px;
+}
+.characters__image{
+  width: 100%;
+}
+.characters__button{
+  position: absolute;
+  bottom: 180px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(153, 0, 255);
+}
+.characters__button:hover{
+  cursor: pointer;
+  background-color: rgba(153, 0, 255, 0.527);
+}
